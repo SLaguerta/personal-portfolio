@@ -45,28 +45,11 @@ main {
   display: grid;
   grid-template-areas:
     "header header"
-    "content"
+    "content content content"
     "footer footer";
-  grid-template-columns: 1fr 1fr 1 fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-
-header {
-  grid-area: header;
-}
-
-article {
-  grid-area: content;
-}
-
-aside {
-  grid-area: sidebar;
-}
-
-footer {
-  grid-area: footer;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
