@@ -48,6 +48,7 @@ main {
 h1 {
   text-align: center;
 }
+
 #projects {
   display: grid;
   grid-template-areas:
@@ -60,6 +61,12 @@ h1 {
 
 .project-images{
   width: 250px;
+}
+
+#Github {
+  align-items: center;
+  width: 100px;
+  text-align: center;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
