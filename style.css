@@ -28,8 +28,11 @@ main {
 }
 
 #navbar {
+  position: fixed;
   color: var(--main-white);
   background-color: var(--main-coral);
+  width: 100%;
+  top: 0px;
 }
 
 #navbar ul {
