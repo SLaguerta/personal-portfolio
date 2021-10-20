@@ -23,8 +23,11 @@ a:visited {
   color: var(--main-white);
 }
 main {
+  display: grid;
+  grid-template-columns: 1fr;
   color: var(--main-white);
   background-color: var(--main-ltblue);
+  max-width: 100%;
 }
 
 #navbar {
@@ -56,20 +59,29 @@ h1 {
   display: grid;
   grid-template-areas:
     "header header"
-    "content content content"
-    "footer footer";
+    "content content content";
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+#contact {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  /* justify-self: center; */
 }
 
 .project-images{
   width: 250px;
 }
 
-#Github {
+#Github, #LinkedIn {
   align-items: center;
   width: 100px;
-  text-align: center;
+
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
