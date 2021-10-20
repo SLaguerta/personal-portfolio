@@ -43,23 +43,33 @@ main {
 }
 
 #welcome-section {
+  display: grid;
+  grid-template-columns: auto;
   width: 100%;
   height: 100vh;
-  font-size: 2rem;
   align-items: center;
+  justify-items: center;
   text-align: center;
-  padding: 2em 2em 2em 2em;
 }
 
+#welcome-header {
+  font-size: 4rem;
+}
+#welcome-subtitle {
+  font-size: 2.5rem;
+}
 h1 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #projects {
   display: grid;
   grid-template-areas:
-    "header header"
+    "header"
     "content content content";
+    align-items: center;
+    justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   width: 100%;
@@ -71,7 +81,6 @@ h1 {
   grid-auto-flow: column;
   align-items: center;
   justify-items: center;
-  /* justify-self: center; */
 }
 
 .project-images{
